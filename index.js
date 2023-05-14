@@ -53,7 +53,7 @@ function getResult() {
         }
 
         if (select.value == "Фильмы" && i > 6) {
-            throw new Error("Введите, пожалуйста, значение, меньше или равное 7")
+            throw new Error("Введите, пожалуйста, значение, меньше или равное 6")
         }
     } catch (err) {
         result.innerText = err.message
