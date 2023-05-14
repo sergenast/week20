@@ -57,8 +57,6 @@ function getResult() {
         }
     } catch (err) {
         result.innerText = err.message
-    } finally {
-        result.innerText = 'Идет загрузка'
     }
 }
 
