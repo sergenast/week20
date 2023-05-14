@@ -22,6 +22,7 @@ function getResult() {
     } catch (e) {
         result.innerText = e.message
     }
+
     try {
         for (i = 1; i < 11; i++) {
             if (select.value == "Планеты" && input.value == i) {
@@ -56,6 +57,8 @@ function getResult() {
         }
     } catch (err) {
         result.innerText = err.message
+    } finally {
+        result.innerText = 'Идет загрузка'
     }
 }
 
